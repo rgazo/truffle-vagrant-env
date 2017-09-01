@@ -17,9 +17,11 @@ apt-get install -y git python dstat ntp nodejs build-essential \
 service ntp reload
 
 # For custom build config
-npm install -g node-gyp truffle@3.2.5 \
-	truffle-default-builder ether-pudding rimraf web3@0.20.1 \
-	ethereumjs-testrpc@3.0.5 q
+# Flag --unsafe-perm fixes this error: "root" does not have permission to access...
+# TODO: There is an error related to web3; Using web3@0.20.1 just leads to different problems; Need to revisit later
+npm install -g --unsafe-perm node-gyp truffle \
+	truffle-default-builder ether-pudding rimraf web3 \
+	ethereumjs-testrpc q
 
 # To get a local Web server from your build folder: 
 # php -S 0.0.0.0:8000

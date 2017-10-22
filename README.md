@@ -8,8 +8,14 @@ Setup
 
 * Create a *DAPPS* folder in *~* (it will be synced to */home/vagrant/DAPPS*)
 
+* Get the vagrant box:
+```
+> git clone https://github.com/rgazo/truffle-vagrant-env.git
+```
+
 * Start the vagrant box and log in
 ```
+> cd truffle-vagrant-env
 > vagrant up
 > vagrant ssh
 ```

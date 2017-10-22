@@ -7,6 +7,10 @@ Setup
 ---
 
 * Create a *DAPPS* folder in *~* (it will be synced to */home/vagrant/DAPPS*)
+```
+> cd ~
+> mkdir DAPPS
+```
 
 * Get the vagrant box:
 ```
